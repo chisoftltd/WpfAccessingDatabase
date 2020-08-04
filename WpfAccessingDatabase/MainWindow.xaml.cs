@@ -41,7 +41,16 @@ namespace WpfAccessingDatabase
 
         private void btnEntities_Click(object sender, RoutedEventArgs e)
         {
+            tbTitles.Text = "Ling to Entities";
+            listBoxData.Background = Brushes.Red;
 
+            using (CustomerEntities1 p = new CustomerEntities1())
+            {
+                var allTitles = from t in p.Orders
+                                select t.OrderDate;
+
+                listBoxData.ItemsSource = allTitles;
+            }
         }
 
         private void btnADONET_Click(object sender, RoutedEventArgs e)

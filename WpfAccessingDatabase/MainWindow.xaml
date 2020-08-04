@@ -17,20 +17,11 @@
             <RowDefinition/>
             <RowDefinition Height="6.9*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnSQL" Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="570" Height="116" Click="btnSQL_Click"/>
-        <Button x:Name="btnEntities" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="571" Height="126" Click="btnEntities_Click"/>
-        <Button x:Name="btnADONET" Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Width="571" Height="123" RenderTransformOrigin="0.5,0.5" Click="btnADONET_Click">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
-        <TextBlock x:Name="tbTitles" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="1752" Height="126"/>
-        <ListBox x:Name="listBoxData" HorizontalAlignment="Left" Height="904" Margin="21,23,0,0" Grid.Row="2" VerticalAlignment="Top" Width="1741" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnSQL" Content="LINQ to SQL" Margin="10,10,10,10" Width="570" Height="116" Click="btnSQL_Click" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnEntities" Content="LINQ to Entities" Grid.Column="1" Margin="10,10,10,10" Width="570" Height="116" Click="btnEntities_Click" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnADONET" Content="LINQ to ADO NET" Grid.Column="2" Margin="10,10,10,10" Width="570" Height="116" RenderTransformOrigin="0.5,0.5" Click="btnADONET_Click" FontSize="14" FontWeight="Bold"/>
+        <TextBlock x:Name="tbTitles" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="5" Width="1752" Height="116" FontWeight="Bold" FontSize="14"/>
+        <ListBox x:Name="listBoxData" Height="904" Margin="21,23,0,0" Grid.Row="2" Width="1741" Grid.ColumnSpan="5" FontWeight="Bold" FontSize="16"/>
 
     </Grid>
 </Window>
