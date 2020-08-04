@@ -24,5 +24,29 @@ namespace WpfAccessingDatabase
         {
             InitializeComponent();
         }
+
+        private void btnSQL_Click(object sender, RoutedEventArgs e)
+        {
+            tbTitles.Text = "Linq to SQL";
+            listBoxData.Background = Brushes.Azure;
+            using (SQL.PudsDataContext DB = new SQL.PudsDataContext())
+            {
+                var allTitles = from t in DB.Customers
+                                select t.FirstName;
+
+                listBoxData.ItemsSource = allTitles;
+            }
+
+        }
+
+        private void btnEntities_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnADONET_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

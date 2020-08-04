@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfAccessingDatabase
+namespace WpfAccessingDatabase.SQL
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
